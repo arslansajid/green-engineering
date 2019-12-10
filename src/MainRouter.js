@@ -13,7 +13,13 @@ import MissionStatement from './containers/AboutUs/MissionStatement';
 import ContactUs from './containers/ContactUs/ContactUs';
 import Profile  from './containers/Profile/Profile';
 import Scope  from './containers/Scope/Scope';
-import Operations  from './containers/Operations/Operations';
+
+// operations pages...
+import BuildingRetexture from './containers/Operations/BuildingRetexture';
+import CommunicationTransport from './containers/Operations/CommunicationTransport';
+import TelecommunicationTowers from './containers/Operations/TelecommunicationTowers';
+import TransmissionLines from './containers/Operations/TransmissionLines';
+import GeoTechnicalServices from './containers/Operations/GeoTechnicalServices';
 
 // projects pages...
 import BuildingServey from './containers/Projects/BuidingSurvey';
@@ -34,6 +40,12 @@ const MainRouter = () => (
     <Route path="/executive-summary" component={ExecutiveSummary} />
     <Route path="/mission-statement" component={MissionStatement} />
 
+    <Route path="/building-retexture" component={BuildingRetexture} />
+    <Route path="/communication-transportation" component={CommunicationTransport} />
+    <Route path="/telecommunication-towers" component={TelecommunicationTowers} />
+    <Route path="/transmission-lines" component={TransmissionLines} />
+    <Route path="/geotechnical-services" component={GeoTechnicalServices} />
+
     <Route path="/steel-structure" component={SteelStrcture} />
     <Route path="/telecom-tower" component={TelecomTowers} />
     <Route path="/engineering-design" component={EngineeringDesign} />
@@ -45,7 +57,6 @@ const MainRouter = () => (
     <Route path="/contact-us" component={ContactUs} />
     <Route path="/company-profile" component={Profile} />
     <Route path="/scope-of-service" component={Scope} />
-    <Route path="/field-of-operations" component={Operations} />
   </Switch>
 )
 
