@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Projects.css';
+// import './AboutUs.css';
 
 export default class AboutUs extends Component {
   constructor(props) {
@@ -13,7 +13,7 @@ export default class AboutUs extends Component {
     return (
       <div className="about-us-page">
         <div className="container my-3">
-          <h3>Projects</h3>
+          <h3>BuidingSurvey</h3>
         </div>
       </div>
     )
