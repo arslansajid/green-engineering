@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+:focus,
+:active {
+  outline: none !important;
+}
+
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.15)
+}
+
+.header .nav-link{
+  color: #222 !important
+}
+
+.nav a{
+  text-decoration: none !important;
+}
+
+.header .secondary-nav .nav-link{
+  text-transform: uppercase;
+  font-family: Polaris-Condensed-Bold,Polaris-Bold,sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header .sale-link{
+  color: #fd4f57 !important
+}
+
+.header .search .input-group-text{
+  background-color: transparent !important;
+  border-left: unset !important;
+  color: #222 !important;
+  font-weight: 200 !important
+}
+
+.header .search input{
+  border-right: unset !important;
+}
+
+.footer {
+  /* background-color: #ef5350; */
+  background-color: #222;
+  color: white;
+}
+
+.footer .heading {
+  font-family: Polaris-Condensed-Bold,Polaris-Bold,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  color: white;
+  letter-spacing: .1 em;
+}
+
+.footer .appStore-link {
+  font-size: 14px;
+  color: white;
+  line-height: 1.58em;
+  cursor: pointer;
+  vertical-align: super;
+}
+
+.footer .appStore-link:hover {
+  font-size: 14px;
+  color: "grey";
+  line-height: 1.58em;
+  cursor: pointer;
+}
+
+
+.footer .baseline {
+  font-size: 12px;
+  line-height: 1.87rem;
+  color: white;
+}
+
+.footer .links-container {
+  padding-top: 10px;
+}
+
+.footer .links-container ul{
+  padding: 0;
+}
+
+.footer .links-container .footer-links li{
+  list-style: none;
+  font-size: 14px;
+  color: white;
+  line-height: 1.58em;
+  cursor: pointer;
+}
+
+.footer .follow-icons i{
+  cursor: pointer;
+}
+
+.dropdown .btn-secondary {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.nav-link:hover {
+  background-color: black !important;
+  border: none !important;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.dropdown-menu {
+  width: 15rem;
+}
+
+.dropdown-menu .dropdown-item {
+  white-space: inherit;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  border-left: 3px solid red;
+}
+
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
