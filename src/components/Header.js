@@ -103,15 +103,15 @@ class Header extends Component {
                                 About us
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem>CEO Message</DropdownItem>
+                                <Link to="/ceo-message"><DropdownItem>CEO Message</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Mission Statement</DropdownItem>
+                                <Link to="/mission-statement"><DropdownItem>Mission Statement</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Executive Summary</DropdownItem>
+                                <Link to="/executive-summary"><DropdownItem>Executive Summary</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Clients and Business Associates</DropdownItem>
+                                <Link to="/clients-business-associates"><DropdownItem>Clients and Business Associates</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Accreditation</DropdownItem>
+                                <Link to="/accreditation"><DropdownItem>Accreditation</DropdownItem></Link>
                             </DropdownMenu>
                         </Dropdown>
                         <Link to="/company-profile">
@@ -134,15 +134,15 @@ class Header extends Component {
                                 Field of Operations
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem>Building and Retexture</DropdownItem>
+                                <Link to="/building-retexture"><DropdownItem>Building and Retexture</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Communication and Transportation</DropdownItem>
+                                <Link to="/communication-transportation"><DropdownItem>Communication and Transportation</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Telecommunication Towers</DropdownItem>
+                                <Link to="/telecom-towers"><DropdownItem>Telecommunication Towers</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Transmission Lines</DropdownItem>
+                                <Link to="/transmission-lines"><DropdownItem>Transmission Lines</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Geo-Technical Services</DropdownItem>
+                                <Link to="/geotechnical-services"><DropdownItem>Geo-Technical Services</DropdownItem></Link>
                             </DropdownMenu>
                         </Dropdown>
                         {/* </Link> */}
@@ -155,17 +155,17 @@ class Header extends Component {
                                 Projects
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem>Steel Structures and Buildings</DropdownItem>
+                                <Link to="/steel-structure"><DropdownItem>Steel Structures and Buildings</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Telecom Towers</DropdownItem>
+                                <Link to="/telecom-tower"><DropdownItem>Telecom Towers</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Detailed Engineering Design</DropdownItem>
+                                <Link to="/engineering-design"><DropdownItem>Detailed Engineering Design</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Buidling feasibility and TI Survey</DropdownItem>
+                                <Link to="/building-survey"><DropdownItem>Buidling feasibility and TI Survey</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Highways, Bridges and Transmission Lines</DropdownItem>
+                                <Link to="/highways-bridges"><DropdownItem>Highways, Bridges and Transmission Lines</DropdownItem></Link>
                                 <DropdownItem divider />
-                                <DropdownItem>Miscellenous Projects and Works</DropdownItem>
+                                <Link to="/projects-works"><DropdownItem>Miscellenous Projects and Works</DropdownItem></Link>
                             </DropdownMenu>
                         </Dropdown>
                         {/* <Link to="/about-us">
