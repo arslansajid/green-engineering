@@ -30,8 +30,18 @@ code {
   color: #222 !important
 }
 
+.responsive-sidebar-menu a,
 .nav a{
   text-decoration: none !important;
+  color: black;
+}
+
+.responsive-sidebar-menu .dropdown-item {
+  white-space: inherit;
+}
+
+.MuiDrawer-paperAnchorRight {
+  width: 270px;
 }
 
 .header .secondary-nav .nav-link{
@@ -122,7 +132,14 @@ code {
 }
 
 .nav-link:hover {
-  background-color: black !important;
+  background-color: #222 !important;
+  border: none !important;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.nav-link.selected {
+  background-color: #222 !important;
   border: none !important;
   color: white !important;
   transition: 0.3s;
@@ -142,4 +159,4 @@ code {
 
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none !important;
-}
+} 
