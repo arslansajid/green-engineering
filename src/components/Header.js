@@ -19,18 +19,26 @@ class Header extends Component {
             projectsDropdownOpen: false,
             showModal: false,
             modalType: 'signin',
-            notificationDropDown: false
+            notificationDropDown: false,
+            sideCartOpen: false,
         }
     }
 
-    toggleDrawer = (side, open) => event => {
-        if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
+    toggleDrawer = () => {
         this.setState({
             sideCartOpen: !this.state.sideCartOpen
         })
-    };
+    }
+
+    // toggleDrawer = (side, open) => event => {
+    //     console.log('called')
+    //     if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+    //         return;
+    //     }
+    //     this.setState({
+    //         sideCartOpen: !this.state.sideCartOpen
+    //     })
+    // };
 
     onMouseEnter = (caller) => {
         if (caller === 'about-us') {
@@ -71,16 +79,82 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
-            {/* <SwipeableDrawer
+            <SwipeableDrawer
                 anchor="right"
-                open={this.props.isCartOpen}
+                open={this.state.sideCartOpen}
                 onClose={this.toggleDrawer}
                 onOpen={this.toggleDrawer}
                 >
-                <Cart
-                    // toggleAutoClose={this.autoCloseDrawerEventHandler}
-                />
-             </SwipeableDrawer> */}
+                <div className="responsive-sidebar-menu">
+                    <NavItem className={`nav-link py-3 ${this.state.aboutDropdownOpen ? "selected" : null}`} onClick={() => this.setState({ aboutDropdownOpen: !this.state.aboutDropdownOpen})}>
+                        About Us
+                        <i className={`fas fa-angle-${this.state.aboutDropdownOpen ? "up" : "down"} float-right ml-3`}/>
+                    </NavItem>
+                    {
+                        this.state.aboutDropdownOpen
+                        ?
+                        <div>
+                            <Link to="/ceo-message"><DropdownItem>CEO Message</DropdownItem></Link>
+                            <Link to="/mission-statement"><DropdownItem>Mission Statement</DropdownItem></Link>
+                            <Link to="/executive-summary"><DropdownItem>Executive Summary</DropdownItem></Link>
+                            <Link to="/clients-business-associates"><DropdownItem>Clients and Business Associates</DropdownItem></Link>
+                            <Link to="/accreditation"><DropdownItem>Accreditation</DropdownItem></Link>
+                        </div>
+                        :
+                        null
+                    }
+                    <Link to="/scope-of-service">
+                        <NavItem className="nav-link py-3">
+                            Company Profile
+                        </NavItem>
+                    </Link>
+                    <Link to="/scope-of-service">
+                        <NavItem className="nav-link py-3">
+                            Scope of Services
+                        </NavItem>
+                    </Link>
+                    <NavItem className={`nav-link py-3 ${this.state.operationsDropdownOpen ? "selected" : null}`} onClick={() => this.setState({ operationsDropdownOpen: !this.state.operationsDropdownOpen})}>
+                        Field of Operations
+                        <i className={`fas fa-angle-${this.state.operationsDropdownOpen ? "up" : "down"} float-right ml-3`}/>
+                    </NavItem>
+                    {
+                        this.state.operationsDropdownOpen
+                        ?
+                        <div>
+                            <Link to="/building-retexture"><DropdownItem>Building and Retexture</DropdownItem></Link>
+                            <Link to="/communication-transportation"><DropdownItem>Communication and Transportation</DropdownItem></Link>
+                            <Link to="/telecommunication-towers"><DropdownItem>Telecommunication Towers</DropdownItem></Link>
+                            <Link to="/transmission-lines"><DropdownItem>Transmission Lines</DropdownItem></Link>
+                            <Link to="/geotechnical-services"><DropdownItem>Geo-Technical Services</DropdownItem></Link>
+                        </div>
+                        :
+                        null
+                    }
+                    <NavItem className={`nav-link py-3 ${this.state.projectsDropdownOpen ? "selected" : null}`} onClick={() => this.setState({ projectsDropdownOpen: !this.state.projectsDropdownOpen})}>
+                        Projects
+                        <i className={`fas fa-angle-${this.state.projectsDropdownOpen ? "up" : "down"} float-right ml-3`}/>
+                    </NavItem>
+                    {
+                        this.state.projectsDropdownOpen
+                        ?
+                        <div>
+                            <Link to="/steel-structure"><DropdownItem>Steel Structures and Buildings</DropdownItem></Link>
+                            <Link to="/telecom-tower"><DropdownItem>Telecom Towers</DropdownItem></Link>
+                            <Link to="/engineering-design"><DropdownItem>Detailed Engineering Design</DropdownItem></Link>
+                            <Link to="/building-survey"><DropdownItem>Buidling feasibility and TI Survey</DropdownItem></Link>
+                            <Link to="/highways-bridges"><DropdownItem>Highways, Bridges and Transmission Lines</DropdownItem></Link>
+                            <Link to="/projects-works"><DropdownItem>Miscellenous Projects and Works</DropdownItem></Link>
+                        </div>
+                        :
+                        null
+                    }
+                    <Link to="/scope-of-service">
+                        <NavItem className="nav-link py-3">
+                            Contact Us
+                        </NavItem>
+                    </Link>
+                </div>
+             </SwipeableDrawer>
 
                 <Navbar className="primary-nav" color="" light>
                     <Nav>
@@ -93,7 +167,13 @@ class Header extends Component {
                         </NavbarBrand>
                     </Nav>
 
-                    <Nav>
+                    <Nav className="d-sm-flex d-md-none">
+                        <div className="resp-menu" onClick={() => this.toggleDrawer()}>
+                            <i className="fas fa-bars" />
+                        </div>
+                    </Nav>
+
+                    <Nav className="d-none d-md-flex">
                         <Dropdown
                             onMouseEnter={() => this.onMouseEnter("about-us")}
                             onMouseLeave={() => this.onMouseLeave("about-us")}
