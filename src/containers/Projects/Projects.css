@@ -1,0 +1,14 @@
+.flyer-section {
+    width: 100%;
+    min-height: 400px;
+    background: url('http://www.edb.com.pk/banner/Edb Projects.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  table, th, td {
+    border: 2px solid #CCCCCC;
+  }
+
+  .table th, .table td {
+    padding: 1rem !important;
+}
