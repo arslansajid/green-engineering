@@ -11,11 +11,22 @@ export default class AboutUs extends Component {
 
   render() {
     return (
-      <div className="about-us-page">
-        <div className="container my-3">
-          <h3>ClientsBusiness</h3>
+      <div className="clients-business">
+        <div className="flyer-section" />
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="px-5">
+                  <h3 className="heading my-3">
+                    Client Gallery
+                  </h3>
+
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    )
+      )
+    }
   }
-}
