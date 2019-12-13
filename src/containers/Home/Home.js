@@ -46,7 +46,7 @@ export default class Home extends Component {
     render() {
       return (
         <div className="home-page">
-          <div className="banner-section mb-3">
+          <div className="banner-section mb-5">
             <ImageGallery
               items={images}
               showFullscreenButton={false}
@@ -57,16 +57,24 @@ export default class Home extends Component {
               slideDuration={800}
             />
           </div>
-          <div className="body px-5">
-            <h3 className="heading">
-              About Green-Engineering
-            </h3>
-            <p className="my-3">Engineering Design Bureau, established since 1989, is a Consultancy firm of Engineers and Planners with its Head Office in Lahore (Pakistan) and it's Regional Offices in Karachi (Pakistan), Islamabad (Pakistan), Jubail city (Saudi Arabia) and Al-Khobar (Saudi Arabia). The firm provides comprehensive consulting services to both the public and private sectors, through its professional excellence.
 
-It has grown from a relatively small Organization to highly specialized firm offering integrated professional services to its clients covering the fields of Buildings, Communications, Transport and T.I, Planning, Telecommunication / Microwave Towers and Transmission lines.
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="px-5">
 
-The firm has Planned, Designed and supervised a number of important Engineering projects since Establishment in 1989. Our key personnel and specialist consultants are outstanding designers who are backed by a strong team of professionals. These include highly Qualified and Experienced Telecoms Engineers, Bridge Engineers, Highways and Transportation Engineers, Structural Engineers, Steel Structure Designers, Geo-technical Experts, Water Supply & Sanitary Engineers, Electrical Engineer, Architects and Planners, many of whom hold Postgraduate Degrees and Specialized Experience in their respective fields</p>
-          </div>
+                  <h3 className="heading">
+                    About Green-Engineering
+                  </h3>
+                  <p className="my-3">Engineering Design Bureau, established since 1989, is a Consultancy firm of Engineers and Planners with its Head Office in Lahore (Pakistan) and it's Regional Offices in Karachi (Pakistan), Islamabad (Pakistan), Jubail city (Saudi Arabia) and Al-Khobar (Saudi Arabia). The firm provides comprehensive consulting services to both the public and private sectors, through its professional excellence.</p>
+
+                  <p>It has grown from a relatively small Organization to highly specialized firm offering integrated professional services to its clients covering the fields of Buildings, Communications, Transport and T.I, Planning, Telecommunication / Microwave Towers and Transmission lines.</p>
+
+                  <p>The firm has Planned, Designed and supervised a number of important Engineering projects since Establishment in 1989. Our key personnel and specialist consultants are outstanding designers who are backed by a strong team of professionals. These include highly Qualified and Experienced Telecoms Engineers, Bridge Engineers, Highways and Transportation Engineers, Structural Engineers, Steel Structure Designers, Geo-technical Experts, Water Supply & Sanitary Engineers, Electrical Engineer, Architects and Planners, many of whom hold Postgraduate Degrees and Specialized Experience in their respective fields</p>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
     )
   }
