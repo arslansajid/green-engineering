@@ -1,0 +1,34 @@
+.building-retexture .flyer-section {
+    width: 100%;
+    min-height: 400px;
+    background: url('http://www.edb.com.pk/banner/Edb%20Builing%20and%20retexture%20department.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .communication-transport .flyer-section {
+    width: 100%;
+    min-height: 400px;
+    background: url('http://www.edb.com.pk/banner/Engineering%20Design%20EDB%20Communication%20and%20transportation.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .telecommunication-towers .flyer-section {
+    width: 100%;
+    min-height: 400px;
+    background: url('http://www.edb.com.pk/banner/Telecomunication.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .transmission-lines .flyer-section {
+    width: 100%;
+    min-height: 400px;
+    background: url('http://www.edb.com.pk/banner/Engineering%20Design%20Bureau%20Transmission%20Lines.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .geo-services .flyer-section {
+    width: 100%;
+    min-height: 400px;
+    background: url('http://www.edb.com.pk/banner/Eingineering%20Design%20Bureau%20Geotechnical%20Engineering.jpg') no-repeat;
+    background-size: cover;
+  }
