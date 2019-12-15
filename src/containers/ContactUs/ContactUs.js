@@ -3,6 +3,12 @@ import './ContactUs.css';
 import { Button } from 'reactstrap';
 import GoogleMapReact from 'google-map-react';
 
+const Marker = () => {
+  return (
+    <i className="fas fa-2x fa-map-marker-alt map-marker" />
+  )
+}
+
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
@@ -56,15 +62,7 @@ export default class AboutUs extends Component {
                         defaultCenter={this.state.center}
                         defaultZoom={11}
                       >
-                        {/* <p
-                          lat={59.955413}
-                          lng={30.337844}
-                          // text="My Marker"
-                        >
-                          My marker
-                        </p> */}
-                        <i lat={33.726030}
-                          lng={73.074607} className="fas fa-2x fa-map-marker-alt map-marker" />
+                        <Marker lat={33.726030} lng={73.074607} />
                       </GoogleMapReact>
                     </div>
                   </div>
