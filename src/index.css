@@ -160,3 +160,11 @@ code {
 .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: none !important;
 } 
+
+/* .contact-footer {
+  border-top: 1px solid #808080;
+} */
+
+.map-marker {
+  color: red;
+}

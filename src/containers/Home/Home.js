@@ -9,23 +9,27 @@ import ImageGallery from 'react-image-gallery';
 
 const images = [
   {
-    original: 'http://www.edb.com.pk/slider/1.jpg',
+    original: require('../../assets/Images/1.jpeg'),
     thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
   },
   {
-    original: 'http://www.edb.com.pk/slider/2.jpg',
+    original: require('../../assets/Images/2.jpeg'),
     thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
   },
   {
-    original: 'http://www.edb.com.pk/slider/3.jpg',
+    original: require('../../assets/Images/3.jpg'),
     thumbnail: 'http://www.edb.com.pk/slider/3.jpg',
   },
   {
-    original: 'http://www.edb.com.pk/slider/4.jpg',
+    original: require('../../assets/Images/4.jpeg'),
     thumbnail: 'http://www.edb.com.pk/slider/4.jpg',
   },
   {
-    original: 'http://www.edb.com.pk/slider/5.jpg',
+    original: require('../../assets/Images/5.jpeg'),
+    thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  },
+  {
+    original: require('../../assets/Images/6.jpg'),
     thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
   },
 ];
