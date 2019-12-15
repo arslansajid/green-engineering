@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { Navbar, NavbarBrand, Nav, NavItem, Modal, ModalHeader, ModalBody, ModalFooter, Button, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 // import Cart from './Cart/cart';
-import Logo from '../assets/Images/waffle_logo_2019.png';
+// import Logo from '../assets/Images/waffle_logo_2019.png';
 import { toggleCart } from '../actions/Actions';
 // import PropTypes from 'prop-types';
 // import {connect} from 'react-redux';
