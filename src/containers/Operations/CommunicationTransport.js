@@ -1,5 +1,32 @@
 import React, { Component } from 'react';
 import './Operations.css';
+import ImageGallery from 'react-image-gallery';
+const images = [
+  {
+    original: require('../../assets/Images/ek.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
+  },
+  {
+    original: require('../../assets/Images/ekek.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
+  },
+  {
+    original: require('../../assets/Images/do.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/3.jpg',
+  },
+  {
+    original: require('../../assets/Images/teen.jfif'),
+    thumbnail: 'http://www.edb.com.pk/slider/4.jpg',
+  },
+  {
+    original: require('../../assets/Images/char.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  },
+  {
+    original: require('../../assets/Images/panch.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  },
+]
 
 export default class AboutUs extends Component {
   constructor(props) {
@@ -11,8 +38,21 @@ export default class AboutUs extends Component {
 
   render() {
     return (
+      <div className="Communication and Transport">
+      
+      <div className="banner-section mb-5">
+          <ImageGallery
+            items={images}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+            showNav={false}
+            autoPlay={true}
+            slideDuration={800}
+          />
+        </div>
       <div className="communication-transport">
-        <div className="flyer-section" />
+        
           <div className="container">
             <div className="row">
               <div className="col">
@@ -24,20 +64,28 @@ export default class AboutUs extends Component {
                 <hr />
 
                 <p className="my-3">
-                  Engineering Design Bureau has developed a Competent Team of Transportation and Highway Engineers and Bridge Designers.
+                We have a team of professional engineers in the field of transportation and Highway engineering.
                 </p>
 
                 <p>
-                  The firm has successfully completed highway projects independently as well as in association with other firms. It now possesses the expertise to handle independently major highways and bridges. Extensive use is made of computer programs for the optimization of highway alignment, Geometric Design, Preparation of Bill of quantities, Analysis of Bridges, etc. The firm also provides advice on site selection, Route location and Surveying by latest Techniques.
+                We offer services in the following categories:
                 </p>
 
-                <p className="mb-5">
-                  The firm is competent in the whole spectrum of Transportation Engineering including Traffic counts, Origin and Destination Surveys, Traffic Engineering, field and Topographic Surveys using Aerial Photography and sophisticated Electronic Distance Measuring (EDM) equipment,  soil  and  material  sampling  and  testing,  feasibility  studies, systems analysis, detailed design of facilities and evaluation studies of operating systems.
-                </p>
+                <ul>
+                <li>Traffic Engineering</li>
+                <li>Geometric design</li>
+                <li>Highway alignment design </li>
+                <li>Estimation</li>
+                <li>Road quality testing </li>
+
+                </ul>
+
+               
 
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     )

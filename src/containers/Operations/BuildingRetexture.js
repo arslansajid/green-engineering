@@ -1,6 +1,30 @@
 import React, { Component } from 'react';
 import './Operations.css';
 
+import ImageGallery from 'react-image-gallery';
+const images = [
+  {
+    original: require('../../assets/Images/first.jpeg'),
+    thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
+  },
+  {
+    original: require('../../assets/Images/scnd.jpeg'),
+    thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
+  },
+  {
+    original: require('../../assets/Images/thrd.jpeg'),
+    thumbnail: 'http://www.edb.com.pk/slider/3.jpg',
+  },
+  {
+    original: require('../../assets/Images/four.jpeg'),
+    thumbnail: 'http://www.edb.com.pk/slider/4.jpg',
+  },
+  {
+    original: require('../../assets/Images/ffth.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  },
+ 
+]
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
@@ -11,8 +35,21 @@ export default class AboutUs extends Component {
 
   render() {
     return (
+      <div className="geo-services">
+     
+      <div className="banner-section mb-5">
+          <ImageGallery
+            items={images}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+            showNav={false}
+            autoPlay={true}
+            slideDuration={800}
+          />
+        </div>
       <div className="building-retexture">
-        <div className="flyer-section" />
+       
           <div className="container">
             <div className="row">
               <div className="col">
@@ -24,18 +61,42 @@ export default class AboutUs extends Component {
                 <hr />
 
                 <p className="my-3">
-                  Engineering Design Bureauhas forged  a  strong  team  of   experts  comprising  of  architects  and  structural  engineers.  The  firm  has  handled  several  projects  in  this  field, which  include,  Commercial,  Industrial  and  Residential  Building  and  other  Civil  Engineering  Projects.
-                </p>
-
-                <p>
-                  The firm also offers integrated services covering Architecture, Structural Engineering, Sanitation Works, Water works, Electrification and Air-Conditioning Multistory Buildings and Industrial Buildings are a  specialty  of  the  firm.  The  firm  has  affected  great  saving  for   its clients through proper planning, adoption of correct structural systems and careful handling  of  detailed  design  using  sophisticated  design  procedures.  The   firm  has  been  responsible  for  the  design  of  overhead  Water tanks, Multistoried Office Blocks, Factory Building, Warehouses, Blocks of Residential Flats and other Building Complex.
-                </p>
-
-                <p className="mb-5">
-                  The firm has substantial individual experience in the design of heavy foundation subjected to vibratory loads.
-                </p>
+                We have an expert team of Architects, Engineers and 2D/3D Draftsmen. Our team is well versed with the modern software’s such as Autocad, 3D Max, Revit, Sketchup etc. 
+                We offer following services:
                 
+                </p>
+
+               <ul>
+               <li>•	2D Architectural Design of all types of Structures</li>
+               <li>•	3D design of Structures</li>
+               <li>•	Interior/Exterior Design </li>
+               <li>•	Green Building Design </li>
+               <li>•	Most realistic renders of all the 3D Design</li>
+               </ul>
+               <h3 className="heading my-3">Civil Structure Design and Supervision and Execution:</h3>
+               <p className="my-3">
+               We offer services in both design and supervision of Civil Infrastructure Projects. We have a team of professional Engineers with vast experience in the design. We provide special expertise in modern software’s such ETAB, SAFE, SAP Staad Pro, Staad Foundation.
+               </p>
+              <p className="my-3">We offer services in the following categories:</p>
+               <ul>
+               <li>Residential building Design and Execution</li>
+               <li>Commercial Buildings design and Execution</li>
+               <li>Multi storey Frame structure design and Execution</li>
+               <li>Steel Structure design and Execution</li>
+               <li>Water front Properties design and Execution</li>
+               <li>Footing analysis and design (Strip, square, raft, pile)</li>
+               <li>Basement design and Execution</li>
+               <li>Retaining wall design and Execution</li>
+               <li>Solar panel supporting structure design  and Execution</li>
+               <li>Marina Construction</li>
+               <li>Marine Projects consulting</li>
+               <li>Bridge design</li>
+               <li>concrete deck bridge design</li>
+               <li>Hydraulic Structures design</li>
+               <li>Project Estimation and cost analysis </li>
+               </ul>
               </div>
+            </div>
             </div>
           </div>
         </div>

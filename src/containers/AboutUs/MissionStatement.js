@@ -25,8 +25,7 @@ export default class AboutUs extends Component {
                   <hr />
 
                   <p className="my-3 text-center">
-                    "Together we strive to achieve our Vision to Transform Pakistan through Persistent Hard Work, Superior Work Ethic,
-                    Due Diligence and Professional Excellence."
+                    "To play a part in the Sustainable Infrastructure Development by bringing together Hard Work, Efficiency and Quality of work at one point"
                   </p>
                 </div>
             </div>

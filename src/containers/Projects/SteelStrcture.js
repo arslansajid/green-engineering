@@ -1,5 +1,33 @@
 import React, { Component } from 'react';
 // import './AboutUs.css';
+import ImageGallery from 'react-image-gallery';
+const images = [
+  {
+    original: require('../../assets/Images/boom.JPG'),
+    thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
+  },
+  {
+    original: require('../../assets/Images/w.jfif'),
+    thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
+  },
+  {
+    original: require('../../assets/Images/e.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/3.jpg',
+  },
+  {
+    original: require('../../assets/Images/r.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/4.jpg',
+  },
+  // {
+  //   original: require('../../assets/Images/char.jpg'),
+  //   thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  // },
+  // {
+  //   original: require('../../assets/Images/panch.jpg'),
+  //   thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  // },
+]
+
 
 export default class AboutUs extends Component {
   constructor(props) {
@@ -11,8 +39,20 @@ export default class AboutUs extends Component {
 
   render() {
     return (
+      <div className="Steel Structurs">
+      <div className="banner-section mb-5">
+          <ImageGallery
+            items={images}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+            showNav={false}
+            autoPlay={true}
+            slideDuration={800}
+          />
+        </div>
       <div className="steel-structure">
-        <div className="flyer-section" />
+        
           <div className="container">
             <div className="row">
               <div className="col">
@@ -96,6 +136,7 @@ export default class AboutUs extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     )

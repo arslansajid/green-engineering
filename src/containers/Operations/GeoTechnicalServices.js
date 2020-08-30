@@ -1,18 +1,58 @@
 import React, { Component } from 'react';
 import './Operations.css';
+import ImageGallery from 'react-image-gallery';
+const images = [
+  {
+    original: require('../../assets/Images/soil.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
+  },
+  {
+    original: require('../../assets/Images/foundation.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
+  },
+  {
+    original: require('../../assets/Images/Ft.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/3.jpg',
+  },
+  {
+    original: require('../../assets/Images/soiltwo.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/4.jpg',
+  },
+  {
+    original: require('../../assets/Images/Geo.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  },
+  {
+    original: require('../../assets/Images/pile.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/5.jpg',
+  },
+]
 
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
         
+
     }
   }
+   
 
   render() {
     return (
       <div className="geo-services">
-        <div className="flyer-section" />
+        
+        <div className="banner-section mb-5">
+            <ImageGallery
+              items={images}
+              showFullscreenButton={false}
+              showPlayButton={false}
+              showThumbnails={false}
+              showNav={false}
+              autoPlay={true}
+              slideDuration={800}
+            />
+          </div>
           <div className="container">
             <div className="row">
               <div className="col">
@@ -24,21 +64,21 @@ export default class AboutUs extends Component {
                 <hr />
 
                 <p className="my-3">
-                  Engineering Design Bureau also provides Geotechnical data for sound planning of development project. The firm is capable of providing expert consultancy services in the field of geology and geophysics.
+                We have a team of Professional Geotechnical Engineers with vast design and execution experience.We provide our services in the following categories: 
                 </p>
 
-                <p>The scopes of services offered are:</p>
-
+     
                 <ul>
-                  <li>Geological Mapping by conventional or aerial photography</li>
-                  <li>Geophysical surveys using the latest techniques</li>
-                  <li>Engineering geological studies</li>
-                </ul>
+                  <li>Soil exploration</li>
+                  <li>Soil Investigation </li>
+                  <li>Shallow/Deep Foundation design </li>
+                  <li>Earth Improvement/ Soil Stabilization </li>
+                  <li>Earth Retaining Structures</li>
+                
+                  </ul>
+          
 
-                <p>
-                  Every Engineering project starts with a geotechnical survey to ascertain the quality of the ground on which the structure is to be built. Our firm in conjunction with others strives to be the best. We have considerable experience and a well-trained staff, which with the help of the latest technological advancements we are able to accurately deduce area water table, salinity and other parameters of this engineering service. With experience of huge number of sites, we have been able to achieve near perfection in this field. 
-                </p>
-
+         
               </div>
             </div>
           </div>

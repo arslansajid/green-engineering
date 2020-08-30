@@ -1,5 +1,25 @@
 import React, { Component } from 'react';
 import './Operations.css';
+import ImageGallery from 'react-image-gallery';
+const images = [
+  {
+    original: require('../../assets/Images/one.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
+  },
+  {
+    original: require('../../assets/Images/two.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
+  },
+  {
+    original: require('../../assets/Images/three.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/3.jpg',
+  },
+  // {
+  //   original: require('../../assets/Images/for.jpg'),
+  //   thumbnail: 'http://www.edb.com.pk/slider/4.jpg',
+  // },
+
+]
 
 export default class AboutUs extends Component {
   constructor(props) {
@@ -11,8 +31,21 @@ export default class AboutUs extends Component {
 
   render() {
     return (
+      <div className="Telecommunication Towers">
+      
+      <div className="banner-section mb-5">
+          <ImageGallery
+            items={images}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+            showNav={false}
+            autoPlay={true}
+            slideDuration={800}
+          />
+        </div>
       <div className="telecommunication-towers">
-        <div className="flyer-section" />
+        
           <div className="container">
             <div className="row">
               <div className="col">
@@ -24,23 +57,24 @@ export default class AboutUs extends Component {
                 <hr />
 
                 <p className="my-3">
-                  Engineering Design Bureau is one of the leading firms in the design of Microwave Towers. The firm has designed and supervised over 8000 towers, both self-supported and guyed masts, for various clients. This field of engineering is the mainstay of company. All our designers are carried out with the most sophisticated structural analysis programs and are in accordance with the latest engineering practices. The services offered in this field are:
+                We have a team of professional Engineers for the design and supervision of Telecommunication jobs.
+                We offer services in the following categories.
                 </p>
+                <h4>Complete Telecommunication Towers Design :</h4>
 
-                <ol>
-                  <li>Detailed Design of Structure and Foundations</li>
-                  <li>Detailed Drawings</li>
-                  <li>Bill of Quantities</li>
-                  <li>Tender Documents</li>
-                  <li>Fabrication Details</li>
-                  <li>Fabrication Supervision</li>
-                  <li>Construction/Erection supervision</li>
-                  <li>Inspection Report</li>
-                </ol>
+                <ul>
+                  <li>Site specific design (Civil FDED) for expansion sites (to include but not limited to: comparison of tower antenna force, far end detailed site layout) Hard & soft copy including design creation on NE Tool. </li>
+                  <li>Tower analysis: a comparative study, to verify that the additional load is within the designed spare capacity of the structure. </li>
+                  <li>Tower analysis: structural calculation based on the available documentation and drawings. </li>
+                  <li>Tower analysis: structural calculation incl. survey to measure and verify the condition of the members of the structural as basis for the structural calculation.</li>
+                  <li>Completer design for the New sites </li>
+                  
+                </ul>
 
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     )

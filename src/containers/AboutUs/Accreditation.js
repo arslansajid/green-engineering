@@ -28,7 +28,7 @@ export default class AboutUs extends Component {
                 </p>
 
                 <p>
-                Certification from different local institutions i.e. Pakistan Engineering Council defines that we meet defined local and worldwide parameters and going step further each time.
+                Certification from different local institutions i.e.<i>Pakistan Engineering Council </i>  defines that we meet defined local and worldwide parameters and going step further each time.
                 </p>
               </div>
             </div>

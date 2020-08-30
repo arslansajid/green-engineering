@@ -1,5 +1,16 @@
 import React, { Component } from 'react';
 import './Operations.css';
+import ImageGallery from 'react-image-gallery';
+const images = [
+  {
+    original: require('../../assets/Images/three.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/1.jpg',
+  },
+  {
+    original: require('../../assets/Images/two.jpg'),
+    thumbnail: 'http://www.edb.com.pk/slider/2.jpg',
+  },
+]
 
 export default class AboutUs extends Component {
   constructor(props) {
@@ -11,8 +22,21 @@ export default class AboutUs extends Component {
 
   render() {
     return (
+      <div className="Transmission Lines">
+        
+      <div className="banner-section mb-5">
+          <ImageGallery
+            items={images}
+            showFullscreenButton={false}
+            showPlayButton={false}
+            showThumbnails={false}
+            showNav={false}
+            autoPlay={true}
+            slideDuration={800}
+          />
+        </div>
       <div className="transmission-lines">
-        <div className="flyer-section" />
+        
           <div className="container">
             <div className="row">
               <div className="col">
@@ -41,6 +65,7 @@ export default class AboutUs extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     )
