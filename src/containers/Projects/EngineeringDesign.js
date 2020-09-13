@@ -12,13 +12,13 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className="engineering-design">
-        <div className="flyer-section" />
+        
           <div className="container">
             <div className="row">
               <div className="col">
               <div className="px-5">
                 <h3 className="heading my-3">
-                  Projects
+                  Engineering Design
                 </h3>
 
                 <hr />
@@ -26,69 +26,46 @@ export default class AboutUs extends Component {
                 <div className="px-4">
 
                   <h5 className="heading-grey mt-5 mb-4">
-                    Housing Societies
+                  Projects
                   </h5>
 
                   <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
-
-                  <h5 className="heading-grey mt-5 mb-4">
-                    Studies
-                  </h5>
-
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
-
-                  <h5 className="heading-grey mt-5 mb-4">
-                    Underground Oil Storage Tanks
-                  </h5>
-
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
+                  <tr>
+                  <th>Sr.Number</th>
+                  <th>Project Name</th>
+                  <th>Client</th>
+                  
+                </tr>
+                <tr>
+                
+                </tr>
+                <tr>
+                <td>1</td>
+                  <td>Complete MEP Design of 5 Star Hotel </td>
+                  <td>Islamabad,Pakistan</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                  <td>Complete MEP Design of 50 Bed Hospital </td>
+                  <td>Islamabad,Pakistan</td>
+                </tr>
+                <tr>
+                <td>3</td>
+                  <td>MEP Design of 40 Bed Hospital</td>
+                  <td>Riyadh , KSA</td>
+                </tr>
+                
+                <tr>
+                <td>4</td>
+                  <td>Structural Design of Basement And Super Structure </td>
+                  <td>Glasgow , UK</td>
+                </tr>
+                <tr>
+                <td>5</td>
+                  <td>Structural Design of Basement And Super Structure</td>
+                  <td>Detroit , USA</td>
+                </tr>
+                
                   </table>
 
                 </div>

@@ -40,7 +40,7 @@ export default class AboutUs extends Component {
     const {contact} = this.state;
     return (
       <div className="contact">
-        <div className="flyer-section" />
+    
           <div className="container">
             <div className="row">
               <div className="col">
@@ -52,9 +52,79 @@ export default class AboutUs extends Component {
                 <hr />
 
                 <div className="row">
-                  <div className="col-lg-4">A</div>
-                  <div className="col-lg-4">B</div>
                   <div className="col-lg-4">
+                  <address>
+                  <a href="mailto:info@greenengineeringint.com">info@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="salaam@greenengineeringint.com">salaam@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:n.salaam@greenengineeringint.com">n.salaam@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:mh.salaam@greenengineeringint.com">mh.salaam@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:naeem@greenengineeringint.com">naeem@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:usman@greenengineeringint.com">usman@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:qaiser@greenengineeringint.com">qaiser@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:Adhban@greenengineeringint.com">Adhban@greenengineeringint.com</a>
+                  
+                  </address>
+
+                  </div>
+                  <div className="col-lg-4">
+                  <address>
+                  <a href="mailto:farooq@greenengineeringint.com">farooq@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:hussaam@greenengineeringint.com">hussaam@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:G.adhban@greenengineeringint.com">G.adhban@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:m.naeem@greenengineeringint.com">m.naeem@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:structure@greenengineeringint.com">structure@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:Geo@greenengineeringint.com">Geo@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:Trans@greenengineeringint.com">Trans@greenengineeringint.com</a>
+                  
+                  </address>
+                  <address>
+                  <a href="mailto:draft@greenengineeringint.com">draft@greenengineeringint.com</a>
+                  
+                  </address>
+
+                  
+                  </div>
+                  <div className="col-lg-4">
+                  
                     <div style={{ height: '400px', width: '100%' }}>
                       <GoogleMapReact
                         bootstrapURLKeys={{ key: 'AIzaSyDai50O1JJN5mgRPVI4qb7kr7SUxDZvpnA' }}
@@ -65,7 +135,9 @@ export default class AboutUs extends Component {
                         <Marker lat={33.726030} lng={73.074607} />
                       </GoogleMapReact>
                     </div>
+                   
                   </div>
+                  
                 </div>
 
                 <h5 className="heading-grey">

@@ -12,84 +12,53 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className="building-servey">
-        <div className="flyer-section" />
+        
           <div className="container">
             <div className="row">
               <div className="col">
               <div className="px-5">
                 <h3 className="heading my-3">
-                  Projects
+                Building Feasibility And TI Survey
                 </h3>
 
                 <hr />
 
                 <div className="px-4">
 
+                 
+
                   <h5 className="heading-grey mt-5 mb-4">
-                    Housing Societies
+
+                  Projects
                   </h5>
 
                   <table className="table">
                     <tr>
+                      <th>Sr.Number</th>
                       <th>Project</th>
                       <th>Client</th>
-                      <th>Project Description</th>
                     </tr>
                     <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
+                      <td>1</td>
+                      <td>I-Beam Retaining Wall Design</td>
+                      <td>Sausalito, USA</td>
                     </tr>
                     <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
+                    <td>2</td>
+                    <td>Architectural And Interior Design of Resturants Chain</td>
+                    <td>Dubai,UAE</td>
+                  </tr>
+                  <tr>
+                  <td>3</td>
+                  <td>Architectural And Interior Design of Resturants Chain</td>
+                  <td>Dubai, UAE </td>
+                </tr>
+        
+          
+            
                   </table>
 
-                  <h5 className="heading-grey mt-5 mb-4">
-                    Studies
-                  </h5>
-
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
-
-                  <h5 className="heading-grey mt-5 mb-4">
-                    Underground Oil Storage Tanks
-                  </h5>
-
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
+                 
 
                 </div>
 

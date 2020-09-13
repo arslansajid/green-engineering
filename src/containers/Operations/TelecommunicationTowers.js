@@ -60,7 +60,7 @@ export default class AboutUs extends Component {
                 We have a team of professional Engineers for the design and supervision of Telecommunication jobs.
                 We offer services in the following categories.
                 </p>
-                <h4>Complete Telecommunication Towers Design :</h4>
+                <h4>Complete Telecommunication Towers Design </h4>
 
                 <ul>
                   <li>Site specific design (Civil FDED) for expansion sites (to include but not limited to: comparison of tower antenna force, far end detailed site layout) Hard & soft copy including design creation on NE Tool. </li>
@@ -70,6 +70,8 @@ export default class AboutUs extends Component {
                   <li>Completer design for the New sites </li>
                   
                 </ul>
+                <h4>Inside Building System (IBS) System Design </h4>
+                <p><b>Wifi Network Designing  </b></p>
 
               </div>
             </div>

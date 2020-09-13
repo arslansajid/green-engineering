@@ -161,7 +161,7 @@ class Header extends Component {
                         <NavbarBrand href="/">
                             <div className="d-flex justify-content-center align-items-center">
                                 {/* <img className="company-logo mr-2" src={Logo} alt="logo" /> */}
-                                <div className="company-name">Green-Engineering</div>
+                                <div className="company-name">Green Engineering International</div>
                             </div>
                             
                         </NavbarBrand>

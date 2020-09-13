@@ -58,78 +58,77 @@ export default class AboutUs extends Component {
               <div className="col">
               <div className="px-5">
                 <h3 className="heading my-3">
-                  Projects
+                  Steel Structures And Building Retexture
                 </h3>
 
                 <hr />
 
                 <div className="px-4">
 
-                  <h5 className="heading-grey mt-5 mb-4">
-                    Housing Societies
-                  </h5>
-
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
 
                   <h5 className="heading-grey mt-5 mb-4">
-                    Studies
-                  </h5>
+                  Projects
+                </h5>
 
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
+                <table className="table">
+                  <tr>
+                    <th>Sr.Number</th>
+                    <th>Project Name</th>
+                    <th>Client</th>
+                    
+                  </tr>
+                  <tr>
+                  
+                  </tr>
+                  <tr>
+                  <td>1</td>
+                    <td>Complete Design of 1 Kanal House </td>
+                    <td>DHA Lahore,Pakistan</td>
+                  </tr>
+                  <tr>
+                  <td>2</td>
+                    <td>Complete Design of 4 Storey Factor Building </td>
+                    <td>Sundas Industrial Estate</td>
+                  </tr>
+                  <tr>
+                  <td>3</td>
+                    <td>Complete Design of 2 Kanal House </td>
+                    <td>DHA Lahore, Pakistan</td>
+                  </tr>
+                  <tr>
+                  <td>4</td>
+                    <td>Cliff Home Design </td>
+                    <td>Aston Town Pennsylvania</td>
+                  </tr>
+                  <tr>
+                  <td>5</td>
+                    <td>Cliff Home Design </td>
+                    <td>Aston Town Pennsylvania</td>
+                  </tr>
+                  <tr>
+                   <td>6</td>
+                    <td>Structural Design of Houses Complete in All Respects</td>
+                    <td>Detroit.USA </td>
+                  </tr>
 
-                  <h5 className="heading-grey mt-5 mb-4">
-                    Underground Oil Storage Tanks
-                  </h5>
-
-                  <table className="table">
-                    <tr>
-                      <th>Project</th>
-                      <th>Client</th>
-                      <th>Project Description</th>
-                    </tr>
-                    <tr>
-                      <td>Engineering University Employees Cooperative Housing Society, Lahore</td>
-                      <td>University of Engineering and Technology, Lahore</td>
-                      <td>Detailed Design of Road works and Structures, Bill of Quantities and Specifications</td>
-                    </tr>
-                    <tr>
-                      <td>Hostels for Oil Field Company</td>
-                      <td>Ikan</td>
-                      <td>Detailed Design of Structures, Bill of Quantities and Specifications.</td>
-                    </tr>
-                  </table>
+                  <tr>
+                  <td>7</td>
+                    <td>Steel Structure Design of Warehouse</td>
+                    <td>Houstan, USA</td>
+                  </tr>
+                  <tr>
+                  <td>8</td>
+                    <td>Steel Structure of Mezzanine Floor </td>
+                    <td>Abu-Dhabi, UAE</td>
+                  </tr>
+                  <tr>
+                  <td>9</td>
+                  <td>Container Warehouse Design</td>
+                  <td>USA</td>
+                </tr>
+                  
+                </table>
+                
 
                 </div>
 

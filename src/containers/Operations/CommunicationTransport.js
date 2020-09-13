@@ -73,10 +73,10 @@ export default class AboutUs extends Component {
 
                 <ul>
                 <li>Traffic Engineering</li>
-                <li>Geometric design</li>
-                <li>Highway alignment design </li>
+                <li>Geometric Design</li>
+                <li>Highway Alignment Design </li>
                 <li>Estimation</li>
-                <li>Road quality testing </li>
+                <li>Road Quality Testing </li>
 
                 </ul>
 

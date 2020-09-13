@@ -12,7 +12,7 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className="clients-business">
-        <div className="flyer-section" />
+      
           <div className="container">
             <div className="row">
               <div className="col">
@@ -29,9 +29,11 @@ export default class AboutUs extends Component {
                   <li>Tawal</li>
                   <li>Pyramid </li>
                   <li>STC</li>
+                  <li>Mascon Engineering</li>
                   <li>Maxorb</li>
                   <li>Geotech Design</li>
                   <li>All Services USA</li>
+                  <li></li>
                   </ol>
                   <p>We have a great number of satisfied clients and their number is increasing with every passing day. </p>
 

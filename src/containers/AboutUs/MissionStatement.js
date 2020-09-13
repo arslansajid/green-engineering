@@ -12,8 +12,7 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className="mission-statement">
-        <div className="flyer-section" />
-
+    
           <div className="container">
             <div className="row">
               <div className="col">
@@ -24,9 +23,9 @@ export default class AboutUs extends Component {
 
                   <hr />
 
-                  <p className="my-3 text-center">
-                    "To play a part in the Sustainable Infrastructure Development by bringing together Hard Work, Efficiency and Quality of work at one point"
-                  </p>
+                  <p className="my-3 text-center"><b>
+                    "To play a part in the Sustainable Infrastructure Development by bringing together Hard Work, Efficiency and Quality of work at one point."
+                  </b></p>
                 </div>
             </div>
           </div>

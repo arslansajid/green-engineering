@@ -13,7 +13,7 @@ export default class AboutUs extends Component {
   render() {
     return (
       <div className="ceo-page">
-        <div className="flyer-section" />
+
         
           <div className="container">
             <div className="row">
